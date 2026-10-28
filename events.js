@@ -2,7 +2,16 @@
    offset: Arkansas is -05:00 in daylight time and -06:00 in standard time.
    Example fields: {title, venue, address, start, end, mapsUrl}.
    Keep confirmedEvents empty until Scott confirms dates AND times. */
-const confirmedEvents = [];
+const confirmedEvents = [
+  {
+    "title": "Sunday coin-counting stop",
+    "venue": "ESQ Realty Group parking lot",
+    "address": "422 W Grand Avenue, Hot Springs, AR 71901",
+    "start": "2026-11-01T10:00:00-06:00",
+    "end": "2026-11-01T12:00:00-06:00",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=422%20W%20Grand%20Avenue%2C%20Hot%20Springs%2C%20AR%2071901"
+  }
+];
 const eventList = document.getElementById('event-list');
 function renderEvents() {
 const now = new Date();
